@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MiPlazoFijo</string>
+    <string name="en_dolares">In dollars</string>
+    <string name="en_pesos">In Pesos</string>
+    <string name="string_Calcular">..: Calculate :..</string>
+    <string name="string_InteresMes">Interests / Months</string>
+    <string name="string_Intereses">Interest Earned</string>
+    <string name="string_Lapso">Period (days)</string>
+    <string name="string_MontoFinal">Final amount</string>
+    <string name="string_MontoInicial">Initial amount</string>
+    <string name="string_tna">T.N.A.</string>
+    <string name="title_activity_main2">Currency Exchange</string>
+</resources>
