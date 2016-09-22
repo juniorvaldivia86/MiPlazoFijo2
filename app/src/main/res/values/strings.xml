@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MiPlazoFijo</string>
+
+    <string name="en_pesos">En Pesos</string>
+    <string name="en_dolares">En Dolares</string>
+
+    <string name="string_MontoInicial">Monto Inicial</string>
+    <string name="string_tna">T.N.A.</string>
+    <string name="string_Lapso">Lapso (dias)</string>
+
+    <string name="string_Calcular">..: Calcular :..</string>
+
+    <string name="string_MontoFinal">Monto Final</string>
+    <string name="string_Intereses">Interes Ganado</string>
+    <string name="string_InteresMes">Intereses / Mes</string>
+
+    <string name="title_activity_main2">Cambio de Divisa</string>
+</resources>
