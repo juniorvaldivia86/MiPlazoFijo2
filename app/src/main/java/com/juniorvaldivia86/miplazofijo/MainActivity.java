@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         SharedPreferences prefe1 = getSharedPreferences("datos1", Context.MODE_PRIVATE);
 
         EditTextMontoInicial = (EditText) findViewById(R.id.editText);
-        EditTextMontoInicial.setText(prefe1.getString("inicial","5000"));
+        EditTextMontoInicial.setText(prefe1.getString("inicial","6000"));
 
         EditTextTNA = (EditText) findViewById(R.id.editText2);
         EditTextTNA.setText(prefe1.getString("tna","19"));
