@@ -172,7 +172,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Atras"
+                android:text="@string/button10"
                 android:id="@+id/button10"
                 android:layout_below="@+id/linearLayout2"
                 android:layout_alignParentRight="true"

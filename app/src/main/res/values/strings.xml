@@ -15,4 +15,6 @@
     <string name="string_InteresMes">Intereses / Mes</string>
 
     <string name="title_activity_main2">Cambio de Divisa</string>
+    <string name="button10">Atras</string>
+    <string name="button2">..: Nueva Ventana :..</string>
 </resources>

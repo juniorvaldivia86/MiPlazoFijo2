@@ -11,4 +11,6 @@
     <string name="string_MontoInicial">Initial amount</string>
     <string name="string_tna">T.N.A.</string>
     <string name="title_activity_main2">Currency Exchange</string>
+    <string name="button10">Back</string>
+    <string name="button2">..: New Windows :..</string>
 </resources>
