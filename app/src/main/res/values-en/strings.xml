@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MiPlazoFijo</string>
-    <string name="en_dolares">In dollars</string>
-    <string name="en_pesos">In Pesos</string>
+
+    <string name="textView1">Initial amount</string>
+    <string name="textView2">T.N.A.</string>
+    <string name="textView3">Period (days)</string>
+
     <string name="string_Calcular">..: Calculate :..</string>
-    <string name="string_InteresMes">Interests / Months</string>
-    <string name="string_Intereses">Interest Earned</string>
-    <string name="string_Lapso">Period (days)</string>
-    <string name="string_MontoFinal">Final amount</string>
-    <string name="string_MontoInicial">Initial amount</string>
-    <string name="string_tna">T.N.A.</string>
-    <string name="title_activity_main2">Currency Exchange</string>
-    <string name="button10">Back</string>
+
+    <string name="textView4">Final amount</string>
+    <string name="textView5">Interest Earned</string>
+    <string name="textView6">Interests / Months</string>
+
     <string name="button2">..: New Windows :..</string>
+    <string name="button3">Exit</string>
+
+    <string name="title_activity_main2">Currency Exchange</string>
+
+    <string name="radioButton3">Soles</string>
+    <string name="radioButton4">Peos</string>
+    <string name="radioButton5">Dollars</string>
+
+    <string name="resultado1">Result 1</string>
+    <string name="resultado2">Result 2</string>
+
+    <string name="ceros">000.00</string>
+    <string name="button10">Back</string>
 </resources>

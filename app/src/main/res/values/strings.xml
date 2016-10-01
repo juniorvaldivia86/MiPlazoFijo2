@@ -1,20 +1,28 @@
 <resources>
     <string name="app_name">MiPlazoFijo</string>
 
-    <string name="en_pesos">En Pesos</string>
-    <string name="en_dolares">En Dolares</string>
-
-    <string name="string_MontoInicial">Monto Inicial</string>
-    <string name="string_tna">T.N.A.</string>
-    <string name="string_Lapso">Lapso (dias)</string>
+    <string name="textView1">Monto Inicial</string>
+    <string name="textView2">T.N.A.</string>
+    <string name="textView3">Lapso (dias)</string>
 
     <string name="string_Calcular">..: Calcular :..</string>
 
-    <string name="string_MontoFinal">Monto Final</string>
-    <string name="string_Intereses">Interes Ganado</string>
-    <string name="string_InteresMes">Intereses / Mes</string>
+    <string name="textView4">Monto Final</string>
+    <string name="textView5">Interes Ganado</string>
+    <string name="textView6">Intereses / Mes</string>
+
+    <string name="button2">..: Nueva Ventana :..</string>
+    <string name="button3">Salir</string>
 
     <string name="title_activity_main2">Cambio de Divisa</string>
+
+    <string name="radioButton3">Soles</string>
+    <string name="radioButton4">Pesos</string>
+    <string name="radioButton5">Dolares</string>
+
+    <string name="resultado1">Resultado 1</string>
+    <string name="resultado2">Resultado 2</string>
+
+    <string name="ceros">000.00</string>
     <string name="button10">Atras</string>
-    <string name="button2">..: Nueva Ventana :..</string>
 </resources>

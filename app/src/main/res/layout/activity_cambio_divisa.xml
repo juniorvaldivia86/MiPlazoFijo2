@@ -14,169 +14,169 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioGroup
+                android:id="@+id/radioGroup2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:id="@+id/radioGroup2"
-                android:layout_below="@+id/editText7"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginTop="15dp">
+                android:layout_below="@+id/editText7"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
 
                 <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Soles"
                     android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:checked="false"
+                    android:text="@string/radioButton3"
                     android:textStyle="bold|italic" />
 
                 <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pesos"
                     android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:checked="false"
+                    android:text="@string/radioButton4"
                     android:textStyle="bold|italic" />
 
                 <RadioButton
+                    android:id="@+id/radioButton5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dolares"
-                    android:id="@+id/radioButton5"
                     android:layout_weight="1"
                     android:checked="false"
+                    android:text="@string/radioButton5"
                     android:textStyle="bold|italic" />
 
             </RadioGroup>
 
             <EditText
+                android:id="@+id/editText7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/editText7"
-                android:textStyle="bold"
-                android:textColor="#fc0000"
-                android:maxLength="15"
-                android:inputType="numberDecimal"
-                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:maxLength="15"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fc0000"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:id="@+id/textView10"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:layout_below="@+id/radioGroup2"
-                android:textColor="#002efc"
-                android:textStyle="italic"
-                android:hint="resultado 1" />
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:id="@+id/textView11"
-                android:layout_below="@+id/textView10"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
                 android:layout_alignParentStart="true"
+                android:layout_below="@+id/radioGroup2"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
+                android:hint="@string/resultado1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#002efc"
-                android:textStyle="italic"
-                android:hint="resultado 2" />
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="@string/resultado2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#002efc"
+                android:textStyle="italic" />
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView11"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:id="@+id/linearLayout">
+                android:layout_below="@+id/textView11"
+                android:orientation="horizontal">
 
                 <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="numberDecimal"
-                    android:ems="10"
                     android:id="@+id/editText8"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:hint="3.388" />
-
-                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="numberDecimal"
-                    android:ems="10"
-                    android:id="@+id/editText9"
                     android:layout_weight="1"
+                    android:ems="10"
                     android:gravity="center"
-                    android:hint="3.396" />
+                    android:hint="@string/ceros"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/ceros"
+                    android:inputType="numberDecimal" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
+                android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/linearLayout"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:id="@+id/linearLayout2">
+                android:layout_below="@+id/linearLayout"
+                android:orientation="horizontal">
 
                 <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="numberDecimal"
-                    android:ems="10"
                     android:id="@+id/editText10"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:hint="14.90" />
-
-                <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:inputType="numberDecimal"
-                    android:ems="10"
-                    android:id="@+id/editText11"
                     android:layout_weight="1"
+                    android:ems="10"
                     android:gravity="center"
-                    android:hint="15.40" />
+                    android:hint="@string/ceros"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/ceros"
+                    android:inputType="numberDecimal" />
 
             </LinearLayout>
 
             <Button
+                android:id="@+id/button10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button10"
-                android:id="@+id/button10"
-                android:layout_below="@+id/linearLayout2"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_below="@+id/linearLayout2"
+                android:text="@string/button10" />
 
         </RelativeLayout>
     </ScrollView>

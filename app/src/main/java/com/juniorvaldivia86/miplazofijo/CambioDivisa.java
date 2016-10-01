@@ -2,8 +2,8 @@ package com.juniorvaldivia86.miplazofijo;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +14,7 @@ import java.util.Locale;
 
 public class CambioDivisa extends AppCompatActivity implements View.OnClickListener {
 
-    TextView TextViewDolares,TextViewResultado;
+    TextView TextViewDolares, TextViewResultado;
     EditText EditTextDatos, cdolresperu, cdolaresargentina, vdolaresperu, vdolaresargentina;
     Button buttonCerrar;
     RadioButton radioButtonPesos, radioButtonSoles, radioButtonDolares;
@@ -33,9 +33,9 @@ public class CambioDivisa extends AppCompatActivity implements View.OnClickListe
         radioButtonDolares = (RadioButton) findViewById(R.id.radioButton5);
         radioButtonDolares.setOnClickListener(this);
 
-        EditTextDatos = (EditText)findViewById(R.id.editText7);
+        EditTextDatos = (EditText) findViewById(R.id.editText7);
         SharedPreferences prefe = getSharedPreferences("datos2", Context.MODE_PRIVATE);
-        EditTextDatos.setText(prefe.getString("monto","100"));
+        EditTextDatos.setText(prefe.getString("monto", "100"));
 
         TextViewDolares = (TextView) findViewById(R.id.textView10);
         TextViewResultado = (TextView) findViewById(R.id.textView11);
@@ -44,14 +44,14 @@ public class CambioDivisa extends AppCompatActivity implements View.OnClickListe
         /* buttonCerrar.setOnClickListener(this); */
 
         cdolresperu = (EditText) findViewById(R.id.editText8);
-        cdolresperu.setText(prefe.getString("cdp","3.388"));
+        cdolresperu.setText(prefe.getString("cdp", "3.388"));
         vdolaresperu = (EditText) findViewById(R.id.editText9);
-        vdolaresperu.setText(prefe.getString("vdp","3.396"));
+        vdolaresperu.setText(prefe.getString("vdp", "3.396"));
 
-        cdolaresargentina  = (EditText) findViewById(R.id.editText10);
-        cdolaresargentina.setText(prefe.getString("cda","14.90"));
-        vdolaresargentina= (EditText) findViewById(R.id.editText11);
-        vdolaresargentina.setText(prefe.getString("vda","15.40"));
+        cdolaresargentina = (EditText) findViewById(R.id.editText10);
+        cdolaresargentina.setText(prefe.getString("cda", "14.90"));
+        vdolaresargentina = (EditText) findViewById(R.id.editText11);
+        vdolaresargentina.setText(prefe.getString("vda", "15.40"));
 
         buttonCerrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +73,7 @@ public class CambioDivisa extends AppCompatActivity implements View.OnClickListe
             editor.putString("vda", vdolaresargentina.getText().toString());
             editor.apply();
             //finish();
-        }catch (Exception e) {
+        } catch (Exception e) {
             TextViewResultado.setText(e.toString());
         }
 
@@ -101,12 +101,12 @@ public class CambioDivisa extends AppCompatActivity implements View.OnClickListe
                 try {
                     /* cambiamos de soles a pesos */
                     pre = (nro1 / vvdolaresperu);
-                    dolares = String.valueOf(String.format(Locale.ENGLISH, "%.2f", pre )) + " Dolares";
+                    dolares = String.valueOf(String.format(Locale.ENGLISH, "%.2f", pre)) + " Dolares";
                     resultado = String.valueOf(String.format(Locale.ENGLISH, "%.2f", (pre * vcdolaresargentina))) + " Pesos";
 
                     TextViewDolares.setText(dolares);
                     TextViewResultado.setText(resultado);
-                }catch (Exception e) {
+                } catch (Exception e) {
                     TextViewResultado.setText(e.toString());
                 }
                 break;
@@ -120,7 +120,7 @@ public class CambioDivisa extends AppCompatActivity implements View.OnClickListe
 
                     TextViewDolares.setText(dolares);
                     TextViewResultado.setText(resultado);
-                }catch (Exception e) {
+                } catch (Exception e) {
                     TextViewResultado.setText(e.toString());
                 }
                 break;
@@ -134,7 +134,7 @@ public class CambioDivisa extends AppCompatActivity implements View.OnClickListe
 
                     TextViewDolares.setText(dolares);
                     TextViewResultado.setText(resultado);
-                }catch (Exception e) {
+                } catch (Exception e) {
                     TextViewResultado.setText(e.toString());
                 }
                 break;

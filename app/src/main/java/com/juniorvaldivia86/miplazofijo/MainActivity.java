@@ -3,12 +3,11 @@ package com.juniorvaldivia86.miplazofijo;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText EditTextMontoInicial, EditTextTNA, EditTextLapso;
     TextView TextViewMontoFinal, TextViewInteresesGanados, TextViewInteresesMes;
     Button buttonCalcular, buttonNuevaVentana, buttonSalir;
-    RadioButton RadioButtonPesos, RadioButtonDolares;
+    //RadioButton RadioButtonPesos, RadioButtonDolares;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,20 +26,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         SharedPreferences prefe1 = getSharedPreferences("datos1", Context.MODE_PRIVATE);
 
         EditTextMontoInicial = (EditText) findViewById(R.id.editText);
-        EditTextMontoInicial.setText(prefe1.getString("inicial","6000"));
+        EditTextMontoInicial.setText(prefe1.getString("inicial", "6000"));
 
         EditTextTNA = (EditText) findViewById(R.id.editText2);
-        EditTextTNA.setText(prefe1.getString("tna","19"));
+        EditTextTNA.setText(prefe1.getString("tna", "19"));
 
         EditTextLapso = (EditText) findViewById(R.id.editText3);
-        EditTextLapso.setText(prefe1.getString("lapso","30"));
+        EditTextLapso.setText(prefe1.getString("lapso", "30"));
 
         TextViewMontoFinal = (TextView) findViewById(R.id.textView7);
         TextViewInteresesGanados = (TextView) findViewById(R.id.textView8);
         TextViewInteresesMes = (TextView) findViewById(R.id.textView9);
 
-        RadioButtonPesos = (RadioButton) findViewById(R.id.radioButton);
-        RadioButtonDolares = (RadioButton) findViewById(R.id.radioButton2);
+        //RadioButtonPesos = (RadioButton) findViewById(R.id.radioButton);
+        //RadioButtonDolares = (RadioButton) findViewById(R.id.radioButton2);
 
         buttonCalcular = (Button) findViewById(R.id.button);
         buttonCalcular.setOnClickListener(this);
@@ -61,11 +60,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             editor.putString("tna", EditTextTNA.getText().toString());
             editor.putString("lapso", EditTextLapso.getText().toString());
             editor.apply();
-        }catch (Exception e) {
+        } catch (Exception e) {
             TextViewInteresesMes.setText(e.toString());
         }
 
-        double resu1, resu3, dolar=15.4;
+        double resu1, resu3, dolar = 15.4;
         String total, interes, pormes;
 
         switch (v.getId()) {
@@ -83,21 +82,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     // ((MontoInicial-5500)*(TNA-20)*(dias-30))/(dato-36500)
                     // String.format("%.2f", (resu3))
 
-                    if (RadioButtonPesos.isChecked()){
-                        resu1 = ((nro1  * nro2 * nro3) / 36500);
-                        resu3 = ((resu1) / (nro3 / 30));
+                   /* if (RadioButtonPesos.isChecked()){*/
+                    resu1 = ((nro1 * nro2 * nro3) / 36500);
+                    resu3 = ((resu1) / (nro3 / 30));
 
-                        total = String.valueOf(String.format(Locale.ENGLISH, "%.2f", (resu1 + nro1)));
-                        interes = String.valueOf(String.format(Locale.ENGLISH, "%.2f", resu1));
-                        pormes = String.valueOf(String.format(Locale.ENGLISH, "%.2f", (resu3)));
-                    }else{
+                    total = String.valueOf(String.format(Locale.ENGLISH, "%.2f", (resu1 + nro1)));
+                    interes = String.valueOf(String.format(Locale.ENGLISH, "%.2f", resu1));
+                    pormes = String.valueOf(String.format(Locale.ENGLISH, "%.2f", (resu3)));
+                   /* }else{
                         resu1 = ((nro1 * dolar * nro2 * nro3) / 36500);
                         resu3 = ((resu1) / (nro3 / 30));
 
                         total = String.valueOf(String.format(Locale.ENGLISH, "%.2f", ((resu1 + nro1) * dolar)));
                         interes = String.valueOf(String.format(Locale.ENGLISH, "%.2f", (resu1 * dolar)));
                         pormes = String.valueOf(String.format(Locale.ENGLISH, "%.2f", (resu3 * dolar)));
-                    }
+                    }*/
 
                     TextViewMontoFinal.setText(total);
                     TextViewInteresesGanados.setText(interes);
@@ -119,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void Ventana() {
-        Intent i = new Intent(this, CambioDivisa.class );
+        Intent i = new Intent(this, CambioDivisa.class);
         startActivity(i);
     }
 }
